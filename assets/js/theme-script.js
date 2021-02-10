@@ -12,7 +12,7 @@ var call_noti = function (msg, type, time, position) {
 };
 
 $(document).ready(function () {
-	let favourite = new Swiper('#swiper-newspaper', {
+	let blogMain = new Swiper('#swiper-mainblog', {
 		slidesPerView: 1,
 		pagination: {
 			el: '.swiper-pagination',
@@ -22,5 +22,41 @@ $(document).ready(function () {
 			delay: 10000,
 			disableOnInteraction: false,
 		},
+	});
+	let newspaper = new Swiper('#swiper-newspaper', {
+		slidesPerView: 1,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+	});
+	var partner = new Swiper('#swiper-partner', {
+		slidesPerView: 3,
+		navigation: {
+			nextEl: '.story .swiper-button-next',
+			prevEl: '.story .swiper-button-prev',
+		},
+		autoplay: {
+			delay: 10000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 2,
+				spaceBetween: 15,
+			},
+			768: {
+				slidesPerView: 3,
+				spaceBetween: 15,
+			},
+			1024: {
+				slidesPerView: 5,
+				spaceBetween: 15,
+			},
+		}
 	});
 })
