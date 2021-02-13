@@ -104,4 +104,17 @@ $(document).ready(function () {
 			},
 		}
 	});
+	
+	var slideEvent = new Swiper('#swiper-event', {
+		freeMode: true,
+		direction: 'horizontal',
+		loopFillGroupWithBlank: true,
+		loop: true,
+		speed: 80000,
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: false,
+		}
+	});
+	
 })

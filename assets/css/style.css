@@ -197,6 +197,7 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     background: #fff;
     padding: 15px;
     margin: 15px 0;
+    box-shadow: 0 0 1px rgb(0 0 0 / 20%);
 }
 
 .side-heading {
@@ -267,6 +268,27 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     list-style: none;
 }
 
+.list-file {
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.list-file::-webkit-scrollbar {
+    width: .3rem;
+}
+
+.list-file::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.list-file::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.list-file::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 .main-top .left-side .side-inner .side-box ul li:not(:last-of-type) {
     border-bottom: 1px dotted #d1d1d1;
     margin-bottom: 15px;
@@ -304,12 +326,12 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     border: 0;
 }
 
-.main-top .middle-side .side-inner .blog-item {
+.blog-item {
     position: relative;
     overflow: hidden;
 }
 
-.main-top .middle-side .side-inner .blog-item a {
+.blog-item a {
     display: inline-block;
     width: 100%;
     -webkit-transition: all 0.3s ease;
@@ -317,13 +339,13 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     transition: all 0.3s ease;
 }
 
-.main-top .middle-side .side-inner .blog-item a .blog-item--image {
+.blog-item a .blog-item--image {
     display: block;
     position: relative;
     padding-bottom: 75%;
 }
 
-.main-top .middle-side .side-inner .blog-item a .blog-item--image span {
+.blog-item a .blog-item--image span {
     display: block;
     width: 100%;
     height: 100%;
@@ -338,7 +360,7 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     transition: .3s all ease-in;
 }
 
-.main-top .middle-side .side-inner .blog-item a .blog-item--meta .meta-content .meta-content--title {
+.blog-item a .blog-item--meta .meta-content .meta-content--title {
     font-size: 1.1em;
     color: #474747;
     font-weight: 700;
@@ -354,13 +376,13 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     position: relative;
 }
 
-.main-top .middle-side .side-inner .blog-item a .blog-item--meta .meta-content .meta-content--date {
+.blog-item a .blog-item--meta .meta-content .meta-content--date {
     font-size: .95em;
     color: #898989;
     font-weight: 300;
 }
 
-.main-top .middle-side .side-inner .blog-item a .blog-item--meta .meta-content .meta-content--date:before {
+.blog-item a .blog-item--meta .meta-content .meta-content--date:before {
     content: "";
     display: block;
     margin: 18px auto 15px;
@@ -368,7 +390,7 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     border-bottom: 1px solid var(--color-main);
 }
 
-.main-top .middle-side .side-inner .blog-item a .blog-item--meta .meta-content .meta-content--desc {
+.blog-item a .blog-item--meta .meta-content .meta-content--desc {
     margin-top: 5px;
     font-size: 0.95em;
     letter-spacing: 1.5px;
@@ -384,7 +406,7 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     display: none;
 }
 
-.main-top .middle-side .side-inner .blog-item a:hover {
+.blog-item a:hover {
     -webkit-transform: translateY(-8px);
     -ms-transform: translateY(-8px);
     transform: translateY(-8px);
@@ -392,8 +414,8 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     box-shadow: 0 50px 30px -40px rgb(0 0 0 / 10%);
 }
 
-.main-top .middle-side .side-inner .blog-item a:hover .blog-item--image span,
-.main-top .middle-side .side-inner .blog-item a:hover .blog-item--meta .meta-content .meta-content--title {
+.blog-item a:hover .blog-item--image span,
+.blog-item a:hover .blog-item--meta .meta-content .meta-content--title {
     opacity: 0.74;
 }
 
@@ -410,6 +432,7 @@ header .header-bottom .header-bottom--navigation > ul > li:hover:before {
     background: #fff;
     padding: 15px;
     margin: 15px 0;
+    box-shadow: 0 0 1px rgb(0 0 0 / 20%);
 }
 
 .main-bottom .side-inner {
@@ -713,6 +736,7 @@ footer .footer-bottom a:hover {
     background: #fff;
     padding: 15px;
     margin: 15px 0;
+    box-shadow: 0 0 1px rgb(0 0 0 / 20%);
 }
 
 .main-aboutus .right-side {
@@ -862,4 +886,41 @@ footer .footer-bottom a:hover {
     display: block;
     vertical-align: middle;
     border: 0;
+}
+
+.slider-event {
+    box-shadow: 0 0 1px rgb(0 0 0 / 20%);
+    background: #fff;
+    padding: 15px;
+    margin: 15px -15px;
+}
+
+.slider-event .event-image {
+    background: #fff;
+    padding: 5px;
+}
+
+.slider-event .event-image > a {
+    display: block;
+    position: relative;
+    padding-bottom: 75%;
+    width: 100%;
+}
+
+.slider-event .event-image > a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-school {
+    box-shadow: 0 0 1px rgb(0 0 0 / 20%);
+    background: #fff;
+    padding: 15px;
+    margin: 15px 0;
 }
