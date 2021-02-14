@@ -1,15 +1,32 @@
-// Function thông báo
-var call_noti = function (msg, type, time, position) {
-	if (typeof time === 'undefined' || isNaN(time))
-		time = 3000;
-	toastr.options.timeOut = time;
-	toastr.options.extendedTimeOut = time;
-	if (position)
-		toastr.options.positionClass = position;
-	else if ($(window).width() < 765)
-		toastr.options.positionClass = "toast-bottom-full-width";
-	toastr[type](msg);
-};
+$(window).scroll(function () {
+	var top = jQuery(document).scrollTop();
+	var height = 0;
+	
+	if (top > height) {
+		$('.header').addClass('header-sticky animated fadeInDown');
+	} else {
+		$('.header').removeClass('header-sticky animated fadeInDown');
+	}
+	
+	
+	if ($(this).scrollTop() > 100) {
+		$('.float-contact').fadeIn();
+		$('#return-to-top').fadeIn();
+	} else {
+		$('float-contact').fadeOut();
+		$('#return-to-top').fadeOut();
+	}
+	
+	if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+		$('.float-contact').fadeOut();
+	}
+});
+
+$(document).on('click', '#return-to-top', function () {
+	$("html, body").animate({scrollTop: 0}, 750);
+	return false;
+});
+
 
 $(document).ready(function () {
 	$(document).on('click', '#return-to-top', function () {
