@@ -1365,13 +1365,17 @@ footer .footer-bottom a {
         z-index: 1022;
         left: -200%;
         top: 0;
-        height: 100vh;
+        height: 100%;
         -webkit-transition: 0.3s all ease-out;
         -o-transition: 0.3s all ease-out;
         transition: 0.3s all ease-out;
         visibility: hidden;
         background: #fff;
         box-shadow: 0 4px 20px #8891a9;
+    }
+
+    .show-navigation .header-bottom .header-bottom--navigation {
+        height: 100vh;
     }
 
     header .header-bottom .header-bottom--navigation > ul {
@@ -1409,6 +1413,10 @@ footer .footer-bottom a {
         padding: 10px;
         font-size: 1.05em;
         border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    header .header-bottom .header-bottom--navigation > ul > li:hover > a {
+        color: #fff;
     }
 
     header .header-bottom .header-bottom--navigation > ul > li > a > i {
