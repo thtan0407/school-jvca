@@ -1456,7 +1456,7 @@ footer .footer-bottom a {
     }
 
     header .header-bottom .header-bottom--navigation > ul > li:first-of-type {
-        padding: 0px 10px;
+        padding: 0;
         justify-content: flex-end;
         color: #fff;
         font-size: 1.5em;
