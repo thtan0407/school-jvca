@@ -1495,7 +1495,7 @@ footer .footer-bottom a {
 @media screen and (max-width: 768px) {
     header .header-top .header-top--contact {
         padding-top: 20px;
-        display: none;
+        height: auto;
     }
 
     header .header-top .header-top--contact ul {
