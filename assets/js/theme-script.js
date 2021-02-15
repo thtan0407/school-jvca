@@ -22,13 +22,21 @@ $(window).scroll(function () {
 	}
 });
 
-$(document).on('click', '#return-to-top', function () {
-	$("html, body").animate({scrollTop: 0}, 750);
-	return false;
-});
-
-
 $(document).ready(function () {
+	$('header .header-bottom .header-bottom--navigation > ul').prepend('<li><a href="javascript:void(0)" class="d-flex d-lg-none" id="close-menu"><i class="fal fa-times"></i></a></li>');
+	
+	function callMenu() {
+		if ($('body').hasClass('show-navigation')) {
+			$('body').removeClass('show-navigation');
+		} else {
+			$('body').addClass('show-navigation');
+		}
+	}
+	
+	$(document).on("click", "#hamburger, #close-menu, .header-overlay", function () {
+		callMenu();
+	});
+	
 	$(document).on('click', '#return-to-top', function () {
 		$("html, body").animate({scrollTop: 0}, 600);
 		return false;
