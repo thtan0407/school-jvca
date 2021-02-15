@@ -1377,6 +1377,7 @@ footer .footer-bottom a {
         background: #fff;
         box-shadow: 0 4px 20px #8891a9;
     }
+
     header .header-bottom .header-bottom--navigation > ul {
         background: #fff !important;
         list-style-type: none;
@@ -1391,6 +1392,11 @@ footer .footer-bottom a {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    header.header-sticky .header-overlay,
+    header.header-sticky .header-bottom .header-bottom--navigation {
+        height: 100vh;
     }
 
     header .header-bottom .header-bottom--navigation > ul > li {
