@@ -142,4 +142,52 @@ $(document).ready(function () {
 		}
 	});
 	
+	var teacher = new Swiper('#swiper-teacher', {
+		slidesPerView: 4,
+		spaceBetween: 15,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		autoplay: {
+			delay: 1000000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			525: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+			1024: {
+				slidesPerView: 4,
+			},
+		}
+	});
+	
+	var teacher = new Swiper('#swiper-teacher02', {
+		slidesPerView: 3,
+		spaceBetween: 15,
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		autoplay: {
+			delay: 1000000,
+			disableOnInteraction: false,
+		},
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			991: {
+				slidesPerView: 3,
+			},
+		}
+	});
+	
 })
