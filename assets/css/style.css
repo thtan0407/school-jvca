@@ -1755,7 +1755,7 @@ footer .footer-bottom a {
 .main-timeline .timeline-content:before,
 .main-timeline .timeline-content:after {
     content: "";
-    background: #f24709;
+    background: var(--color-main);
     width: 80px;
     height: 60%;
     position: absolute;
@@ -1773,7 +1773,7 @@ footer .footer-bottom a {
 
 .main-timeline .timeline-year {
     color: #fff;
-    background: #f24709;
+    background: var(--color-main);
     font-size: 30px;
     font-weight: 800;
     text-align: center;
@@ -1799,7 +1799,7 @@ footer .footer-bottom a {
 }
 
 .main-timeline .timeline-icon {
-    color: #f24709;
+    color: var(--color-main);
     font-size: 35px;
     line-height: 40px;
     position: absolute;
@@ -1808,7 +1808,7 @@ footer .footer-bottom a {
 }
 
 .main-timeline .title {
-    color: #f24709;
+    color: var(--color-main);
     font-size: 20px;
     font-weight: 900;
     text-transform: uppercase;
