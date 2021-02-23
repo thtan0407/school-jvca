@@ -2111,5 +2111,116 @@ footer .footer-bottom a {
     #notfound .notfound p {
         font-size: 15px;
     }
+
+    .main-room .room-inner {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+
+    .main-room .room-inner a {
+        width: 100% !important;
+    }
+
+    .main-room .room-inner a:last-of-type {
+        position: relative;
+        bottom: 0;
+        left: unset;
+        right: unset;
+    }
+
+    .main-room .room-inner02 .room-desc {
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+    }
+
+    .about-us,
+    .main-career {
+        padding: 15px;
+    }
+
+    .main-study {
+        padding: 0 15px;
+    }
+
+    .table-jvca .table {
+        margin-bottom: 0;
+    }
+
+    .study-inner ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .study-inner ul li {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+    .page-one .inner .inner-left,
+    .page-one .inner .inner-right {
+        width: 100%;
+    }
+
+    .page-one .inner .image-item {
+        margin-bottom: 30px;
+    }
+
+    .page-one .teacher-item.teacher-big .card .card-header {
+        padding-bottom: 75%;
+        width: 100%;
+    }
+
+    .page-one .teacher-item.teacher-big .card .card-header span {
+        background-size: contain;
+    }
+
+    .page-one .teacher-item.teacher-big .card .card-body {
+        padding: 15px 10px;
+    }
+
+    .page-one .swiper-container {
+        padding-bottom: 90px;
+    }
+
+    .page-one .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 10px !important;
+    }
+
+    .main-career table {
+        padding-bottom: 30px;
+    }
+
+    .career-inner ul {
+        flex-wrap: wrap;
+    }
 }
 
+
+@media screen and (max-width: 425px) {
+    .study-inner ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .career-inner {
+        margin-top: 0;
+    }
+
+    .career-inner ul li {
+        width: calc(50% - 30px);
+    }
+
+    .career-inner ul li {
+        margin-left: 0 !important;
+        margin-bottom: 30px;
+    }
+
+    .career-inner ul li:nth-of-type(2n) {
+        margin-left: 40px !important;
+    }
+
+    .career-inner ul li:nth-of-type(2n):before {
+        display: none;
+    }
+}
